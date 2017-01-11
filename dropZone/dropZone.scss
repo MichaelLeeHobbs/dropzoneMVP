@@ -1,0 +1,51 @@
+.dropZoneContainer {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed rgb(102, 102, 102);
+  border-radius: 5px;
+
+  .cancelButton {
+    border-radius: 100%;
+    position:relative;
+    background: red;
+    z-index: 300;
+    float: right;
+    right:10px;
+    top:10px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .dropZonePreview {
+
+    outline: 1px solid #eee;
+    height: 196px;
+    overflow: hidden;
+    width: 196px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -23px;
+
+    .label {
+      padding: 10px;
+      display: table-cell;
+      height: 180px;
+      horiz-align: center;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+
+  .progressbar-container {
+    top: -40px;
+  }
+}
+
+

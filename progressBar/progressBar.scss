@@ -1,0 +1,28 @@
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.progressbar-fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.progressbar-progress {
+  transition: width 200ms;
+};
+
+.progressbar-container  {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 15px;
+  -webkit-animation-duration: 5s;animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;
+}
